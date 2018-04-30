@@ -105,12 +105,50 @@ exports.spacing = spacing;
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var font = {
+  regular: 400,
+  bold: 700,
+  family: '\'Karla\', sans-serif',
+  weights: ['regular', 'bold']
+};
+
+exports.default = font;
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports) {
 
 module.exports = require("htmr");
 
 /***/ }),
-/* 4 */
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var color = {
+  red: '#f9415d',
+  white: '#fff',
+  black: '#010101',
+  gray: '#787878'
+};
+
+exports.default = color;
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -156,26 +194,7 @@ Object.defineProperty(exports, 'SectionInner', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var font = {
-  regular: 400,
-  bold: 700,
-  family: '\'Karla\', sans-serif',
-  weights: ['regular', 'bold']
-};
-
-exports.default = font;
-
-/***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -196,25 +215,6 @@ var breakpoint = function breakpoint(size, css) {
 
 exports.breakpoints = breakpoints;
 exports.default = breakpoint;
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var color = {
-  red: '#f9415d',
-  white: '#fff',
-  black: '#010101',
-  gray: 'rgb(150,150,150)'
-};
-
-exports.default = color;
 
 /***/ }),
 /* 8 */
@@ -294,16 +294,7 @@ Object.defineProperty(exports, 'Past', {
   }
 });
 
-var _Skills = __webpack_require__(38);
-
-Object.defineProperty(exports, 'Skills', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_Skills).default;
-  }
-});
-
-var _Contact = __webpack_require__(39);
+var _Contact = __webpack_require__(38);
 
 Object.defineProperty(exports, 'Contact', {
   enumerable: true,
@@ -312,7 +303,7 @@ Object.defineProperty(exports, 'Contact', {
   }
 });
 
-var _Credits = __webpack_require__(40);
+var _Credits = __webpack_require__(39);
 
 Object.defineProperty(exports, 'Credits', {
   enumerable: true,
@@ -547,7 +538,7 @@ var _reactStaticRoutes = __webpack_require__(18);
 
 var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
-var _globalStyles = __webpack_require__(41);
+var _globalStyles = __webpack_require__(40);
 
 var _globalStyles2 = _interopRequireDefault(_globalStyles);
 
@@ -639,7 +630,7 @@ var universalOptions = {
 
 var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/pages/Home',
-  file: '/Users/trangnguyen/Documents/trang/trang-personal/dist/react-static-routes.js',
+  file: '/Users/trangnguyen/Documents/trang/trangnguyen.github.io/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 11)), (0, _importCss3.default)('src/pages/Home', {
       disableWarnings: true
@@ -659,7 +650,7 @@ var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
 }), universalOptions);
 var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/pages/404',
-  file: '/Users/trangnguyen/Documents/trang/trang-personal/dist/react-static-routes.js',
+  file: '/Users/trangnguyen/Documents/trang/trangnguyen.github.io/dist/react-static-routes.js',
   load: function load() {
     return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 13)), (0, _importCss3.default)('src/pages/404', {
       disableWarnings: true
@@ -1411,7 +1402,6 @@ exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
       trecker = _ref.trecker,
       magine = _ref.magine,
       kiwi = _ref.kiwi,
-      skills = _ref.skills,
       contact = _ref.contact,
       credits = _ref.credits;
   return _react2.default.createElement(
@@ -1420,7 +1410,6 @@ exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
     _react2.default.createElement(_reactHelmet.Helmet, null),
     _react2.default.createElement(_.Intro, { intro: intro }),
     _react2.default.createElement(_.Past, { data: [trecker, magine, kiwi] }),
-    _react2.default.createElement(_.Skills, { data: skills }),
     _react2.default.createElement(_.Contact, { data: contact }),
     _react2.default.createElement(_.Credits, { data: credits })
   );
@@ -1483,11 +1472,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _templateObject = _taggedTemplateLiteral(['\n  p {\n    margin: ', ' 0;\n  }\n  span {\n    margin: ', ' 0;\n    font-weight: ', ';\n    color: ', '\n  }\n'], ['\n  p {\n    margin: ', ' 0;\n  }\n  span {\n    margin: ', ' 0;\n    font-weight: ', ';\n    color: ', '\n  }\n']);
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _htmr = __webpack_require__(3);
+var _htmr = __webpack_require__(4);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
@@ -1495,9 +1486,23 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _elements = __webpack_require__(4);
+var _font = __webpack_require__(3);
+
+var _font2 = _interopRequireDefault(_font);
+
+var _color = __webpack_require__(5);
+
+var _color2 = _interopRequireDefault(_color);
+
+var _variables = __webpack_require__(2);
+
+var _elements = __webpack_require__(6);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Block = _styledComponents2.default.div(_templateObject, _variables.spacing.small, _variables.spacing.small, _font2.default.regular, _color2.default.gray);
 
 var Intro = function Intro(_ref) {
   var intro = _ref.intro;
@@ -1510,6 +1515,15 @@ var Intro = function Intro(_ref) {
       _react2.default.createElement(_elements.RoundImage, { src: intro.content.image.src }),
       _react2.default.createElement(
         _elements.H1,
+        null,
+        intro.content.greetings,
+        _react2.default.createElement('br', null),
+        intro.content.name,
+        _react2.default.createElement('br', null),
+        intro.content.occupation
+      ),
+      _react2.default.createElement(
+        Block,
         null,
         (0, _htmr2.default)(intro.contents)
       )
@@ -1558,11 +1572,11 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _font = __webpack_require__(5);
+var _font = __webpack_require__(3);
 
 var _font2 = _interopRequireDefault(_font);
 
-var _breakpoint = __webpack_require__(6);
+var _breakpoint = __webpack_require__(7);
 
 var _breakpoint2 = _interopRequireDefault(_breakpoint);
 
@@ -1615,11 +1629,11 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _font = __webpack_require__(5);
+var _font = __webpack_require__(3);
 
 var _font2 = _interopRequireDefault(_font);
 
-var _breakpoint = __webpack_require__(6);
+var _breakpoint = __webpack_require__(7);
 
 var _breakpoint2 = _interopRequireDefault(_breakpoint);
 
@@ -1680,13 +1694,13 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _breakpoint = __webpack_require__(6);
+var _breakpoint = __webpack_require__(7);
 
 var _breakpoint2 = _interopRequireDefault(_breakpoint);
 
 var _variables = __webpack_require__(2);
 
-var _color = __webpack_require__(7);
+var _color = __webpack_require__(5);
 
 var _color2 = _interopRequireDefault(_color);
 
@@ -1717,7 +1731,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _htmr = __webpack_require__(3);
+var _htmr = __webpack_require__(4);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
@@ -1725,17 +1739,17 @@ var _styledComponents = __webpack_require__(1);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _font = __webpack_require__(5);
+var _font = __webpack_require__(3);
 
 var _font2 = _interopRequireDefault(_font);
 
-var _color = __webpack_require__(7);
+var _color = __webpack_require__(5);
 
 var _color2 = _interopRequireDefault(_color);
 
 var _variables = __webpack_require__(2);
 
-var _elements = __webpack_require__(4);
+var _elements = __webpack_require__(6);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1780,88 +1794,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  margin: ', ' 0;\n'], ['\n  margin: ', ' 0;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  p {\n    margin: ', ' 0;\n    font-weight: ', ';\n    color: ', '\n  }\n'], ['\n  p {\n    margin: ', ' 0;\n    font-weight: ', ';\n    color: ', '\n  }\n']);
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _htmr = __webpack_require__(3);
-
-var _htmr2 = _interopRequireDefault(_htmr);
-
-var _styledComponents = __webpack_require__(1);
-
-var _styledComponents2 = _interopRequireDefault(_styledComponents);
-
-var _font = __webpack_require__(5);
-
-var _font2 = _interopRequireDefault(_font);
-
-var _color = __webpack_require__(7);
-
-var _color2 = _interopRequireDefault(_color);
-
-var _variables = __webpack_require__(2);
-
-var _elements = __webpack_require__(4);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-var Current = _styledComponents2.default.div(_templateObject, _variables.spacing.small);
-
-var Past = _styledComponents2.default.div(_templateObject2, _variables.spacing.small, _font2.default.regular, _color2.default.gray);
-
-var Skills = function Skills(_ref) {
-  var data = _ref.data;
-  return _react2.default.createElement(
-    _elements.Section,
-    null,
-    _react2.default.createElement(
-      _elements.SectionInner,
-      null,
-      _react2.default.createElement(
-        Current,
-        null,
-        _react2.default.createElement(_elements.RoundImage, { src: data.icon.src })
-      ),
-      _react2.default.createElement(
-        Current,
-        null,
-        data.current
-      ),
-      _react2.default.createElement(
-        Past,
-        null,
-        (0, _htmr2.default)(data.contents)
-      )
-    )
-  );
-};
-
-exports.default = Skills;
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
 var _templateObject = _taggedTemplateLiteral(['\n  p {\n    margin: ', ' 0;\n  }\n'], ['\n  p {\n    margin: ', ' 0;\n  }\n']);
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _htmr = __webpack_require__(3);
+var _htmr = __webpack_require__(4);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
@@ -1871,7 +1810,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _variables = __webpack_require__(2);
 
-var _elements = __webpack_require__(4);
+var _elements = __webpack_require__(6);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1899,7 +1838,7 @@ var Contact = function Contact(_ref) {
 exports.default = Contact;
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1915,7 +1854,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _htmr = __webpack_require__(3);
+var _htmr = __webpack_require__(4);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
@@ -1925,7 +1864,7 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _variables = __webpack_require__(2);
 
-var _elements = __webpack_require__(4);
+var _elements = __webpack_require__(6);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1958,7 +1897,7 @@ var Credits = function Credits(_ref) {
 exports.default = Credits;
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1968,19 +1907,19 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _reset = __webpack_require__(42);
+var _reset = __webpack_require__(41);
 
 var _reset2 = _interopRequireDefault(_reset);
 
-var _font = __webpack_require__(5);
+var _font = __webpack_require__(3);
 
 var _font2 = _interopRequireDefault(_font);
 
-var _breakpoint = __webpack_require__(6);
+var _breakpoint = __webpack_require__(7);
 
 var _breakpoint2 = _interopRequireDefault(_breakpoint);
 
-var _color = __webpack_require__(7);
+var _color = __webpack_require__(5);
 
 var _color2 = _interopRequireDefault(_color);
 
@@ -1993,7 +1932,7 @@ var globalStyles = '\n\t@import url(\'https://fonts.googleapis.com/css?family=Ka
 exports.default = globalStyles;
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2009,4 +1948,4 @@ exports.default = reset;
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.dfd2220a.js.map
+//# sourceMappingURL=static.fac147c6.js.map
